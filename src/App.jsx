@@ -22,7 +22,8 @@ const App = () => {
       <Route exact path='/contact' component={Contact}/>
       <Route excat path='/service' component={() =>{return <Service name="Service"/> } } />
       <Route  path='/contact/name' component={Name}/>
-      <Route  path='/user/:fname' component={User}/>
+      <Route  path='/user/:fname/:lname' component={User}/>
+      <Route  path='/user' component={User}/>
       <Route exact component={Error}/>
     </Switch>
     </>
