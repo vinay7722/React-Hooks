@@ -7,7 +7,7 @@ import Error from './Error';
 import Menu from './Menu';
 import Service from './Service';
 import User from './User'
-
+import Search from './Search'
 
 const App = () => {
 
@@ -20,6 +20,7 @@ const App = () => {
     <Switch>
       <Route exact path='/' component={() =>{return <About name="About"/> } }/>
       <Route exact path='/contact' component={Contact}/>
+      <Route exact path='/search' component={Search}/>
       <Route excat path='/service' component={() =>{return <Service name="Service"/> } } />
       <Route  path='/contact/name' component={Name}/>
       <Route  path='/user/:fname/:lname' component={User}/>
